@@ -32,7 +32,7 @@ int main()
 
     std::vector<unsigned int> moneyOffsets = {0x98, 0x0, 0x68, 0xC8, 0xF80, 0xB8, 0x2A0}; // 152, 0, 104, 200, 3968, 184, 672
     std::vector<unsigned int> scrapOffsets = {0x40, 0x80, 0xDB0, 0xC8, 0xAC0, 0xB8, 0x2AC}; // 64, 128, 3504, 200, 2752, 184, 684
-    std::vector<unsigned int> skillOffsets = {0xB8, 0x0, 0x80, 0xC0, 0x180, 0x178, 0x30  }; // 64, 128, 3504, 200, 2752, 184, 684
+    std::vector<unsigned int> skillOffsets = {0xB8, 0x0, 0x80, 0xC0, 0x180, 0x178, 0x30  }; // got lazy ;p
     uintptr_t scrapAddr = FindDMAAddy(hProcess, gameAssemblyPtr, scrapOffsets);
     uintptr_t moneyAddr = FindDMAAddy(hProcess, gameAssemblyPtr, moneyOffsets);
     uintptr_t skillAddr = FindDMAAddy(hProcess, unityPlayerPtr, skillOffsets);
